@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace ChangeLogCreator
 {
-    internal class Log
+    public enum LogType
     {
-        public string Version { get; set; }
-        public DateTime LogTime { get; set; }
-        public List<LogItem> Logs { get; set; }
-
-
+        New,
+        Fixed,
+        Remove,
+        Notice
     }
 }
